@@ -1,0 +1,114 @@
+body {
+	background: url(img/background.png);
+	padding: 3%;
+	display: flex;
+	font-family: 'Ubuntu', sans-serif;
+	justify-content: center;
+}
+.logo {
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	background-color: white;
+	border-radius: 150px;
+	margin-bottom: 20px;
+	font-family: 'Microsoft PhagsPa', sans-serif;	
+}
+
+#re {
+	padding-top: 10px;
+	font-size: 60px;
+	color: #4c2c5a;
+	font-weight: bold;
+}
+#sumao {
+	font-size: 30px;
+	font-weight: bold;
+}
+.containerLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	font-weight: 500;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+}
+a:hover {
+	font-weight: 700;
+	color: #664774;
+}
+ul {
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-padding-start: 0px !important;
+}
+li {
+	padding-top: 5px;
+	text-align: right;
+}
+.conteudo {
+	width: 600px;
+	height: auto;
+	margin-left: 100px;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	padding: 50px 50px 50px 50px;
+}
+#titulo {
+	font-size: 26px;
+	font-weight: 500;
+}
+strong {
+	font-weight: 700;
+	color: #664774;
+}
+.linktitle {
+	font-size: 26px;
+	font-weight: 700;
+	color: #664774;
+}
+
+p {
+	text-align: justify;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.icone {
+	width: 32px;
+	height: auto;
+}
+.botao {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+.imagem {
+	width: 100%;
+	margin-top: 3%;
+	border: 2px solid black;
+	border-radius: 20px;
+	}
+
+
+@media screen and (max-width: 699px) {
+	.menu {
+		display: none;
+	}
+	body {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.conteudo {
+		margin-left: 0px;
+		padding: 20px;
+		width: 85%;
+	}
+}
+
