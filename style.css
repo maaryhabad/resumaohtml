@@ -13,6 +13,7 @@ body {
 	border-radius: 150px;
 	margin-bottom: 20px;
 	font-family: 'Microsoft PhagsPa', sans-serif;	
+	align-self: center;
 }
 
 #re {
@@ -28,8 +29,7 @@ body {
 .containerLogo {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
+	flex-direction: column;
 	font-weight: 500;
 }
 a {
@@ -112,3 +112,126 @@ p {
 	}
 }
 
+.blocoLogin , .blocoCadastro{
+  background-color: white;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  /*top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);*/
+}
+
+input{
+  width: 250px;
+  height: 40px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+#log{
+  width: 100px;
+  background-color: #7f479a;
+  border: none;
+  color: white;
+  height: 40px;
+  border-radius: 40px;
+}
+.logar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#fundoLogin{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+#fundoCadastro{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#fundoLogin.visivel {
+  display: flex;
+}
+
+#fundoCadastro.visivel {
+  display: flex;
+}
+
+#fecharLogin , #fecharCadastro{
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  }
+
+form {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 10%;
+}
+form > input{
+  width: 100%;
+  border: solid;
+  color: #7f469a;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+form > button.hover{
+  cursor: pointer;
+}
+.erro{
+  border: 1px solid red;
+  animation: shake 0.2s;
+}
+
+.conteudoModal{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10%;
+}
+
+.boas {
+	font-size: 18px;
+	text-align: right;
+	font-weight: bold;
+	color: white;
+	margin-right: 0;
+}
+.botoes {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	background-color: white;
+	width: 200px;
+}
+
+input:hover {
+	background-color:#c8a8d7;
+	border-color: black;
+}
+.menuLogo {
+	display: flex;
+	flex-direction: column;
+}

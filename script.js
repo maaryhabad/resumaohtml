@@ -1,7 +1,7 @@
 function iconeManager1() {/*HOME*/
     document.getElementById("titulo").innerHTML = "Sobre o Resumão";
     document.getElementById("faixa").src = "img/resumao.png";
-    document.getElementById("texto").innerHTML = "O {re}sumão foi montado com o propósito de ajudar todas as meninas que participaram da turma 4 do Bootcamp de FrontEnd do <strong>{reprograma}</strong>. Facilitando o acesso à informação de forma clara e objetiva.";
+    document.getElementById("texto").innerHTML = "O {re}sumão foi montado com o propósito de ajudar todas as meninas que participaram da turma 4 do Bootcamp de FrontEnd do <strong>{reprograma}</strong>. Facilitando o acesso à informação de forma clara e objetiva. Utilizando um código estruturado e comentado.";
 }
 
 function iconeManager2() {

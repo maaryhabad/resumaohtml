@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-        <script type="text/javascript" src="script.js"></script>
+        
 	</head>
 	<body>
         <header>
@@ -16,6 +16,13 @@
                         <div id="re">{Re}</div>
                         <div id="sumao">sumão</div>
                     </div>        
+                </div>
+                <div class="botoes">
+                    <input type="button" id="login" value="Login"></input>
+                    <input type="button" id="cadastro" value="Cadastro"></input>
+                <div>
+            <div>
+                    <p class="boas"></p>
                 </div>
                 <div class="menu">
                     <ul>
@@ -33,6 +40,39 @@
                 </div>
            </div>
       </header>
+
+  <div id="fundoLogin">
+    <div class="blocoLogin">
+        <div class="conteudoModal">
+          <button id="fecharLogin">x</button>
+          <form action="">
+            <input type="email" required placeholder="Email" id="emailLogin" name="email">
+            <input type="password" required placeholder="Senha" id="senhaLogin" name="senha"> 
+          <div class="logar">
+            <button id="log">Logar</button> 
+          </div>
+         </form>
+        </div>
+      </div>
+  </div>
+
+  <div id="fundoCadastro">
+    <div class="blocoCadastro">
+        <div class="conteudoModal">
+          <button id="fecharCadastro">x</button>
+          <form action="">
+            <input type="text" required placeholder="Nome" id="nomeCadastro" name="nome">
+            <input type="email" required placeholder="Email" id="emailCadastro" name="email">
+            <input type="password" required placeholder="Senha" id="senhaCadastro" name="senha">
+            <input type="password" required placeholder="Confirme sua Senha" id="confirmacaoCadastro" name="senha"> 
+          <div class="logar">
+            <button id="log">Logar</button> 
+          </div>
+         </form>
+        </div>
+      </div>
+  </div>
+
 
         <section class ="conteudo">
             <div class="sobre">
@@ -66,7 +106,8 @@
             
             
         </section>
-
-		
+    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="cadastro.js"></script>
+    <script type="text/javascript" src="novapg.js"></script>	
 	</body>
 </html>
