@@ -1,11 +1,14 @@
 var fundoLogin = document.getElementById("fundoLogin");
 var fecharLogin = document.getElementById("fecharLogin");
+var botaoLogin = document.getElementById("#login");
 
 var fundoCadastro = document.getElementById("fundoCadastro");
 var fecharCadastro = document.getElementById("fecharCadastro");
 // var usuario;
 // var email = document.getElementById('email');
 // var senha = document.querySelector('#senha');
+
+// dá pra fazer um botão de desligar que apague as informações!!!!!
 var formulario = document.querySelector('form');
 
 login.onclick = function() {

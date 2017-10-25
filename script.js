@@ -16,6 +16,9 @@ function iconeManager3() {
 }
 
 function iconeManager4() { /*TAG*/
-    document.getElementById("texto").innerHTML = "<iframe src='https://pastebin.com/embed_iframe/2VwyTLHZ' style='border:none;width:100%;height:300px;margin-top:10%'></iframe>";
+    document.getElementById("texto").innerHTML = "<p>Utilizamos as TAG's de texto para facilitar a classificação de informações dentro do nosso código.</p><div class='tag'><div><h1>Esse é o estilo H1.</h1><h2>Esse é o estilo H2.</h2><h3>Esse é o estilo H3.</h3><h4>Esse é o estilo H4.</h4><h5>Esse é o estilo H5.</h5><h6>Esse é o estilo H6.</h6><strong>Esse é o estilo strong.</strong><p>Esse é o p.</p></div><div><iframe src='https://pastebin.com/embed_iframe/2VwyTLHZ' style='border:none;width:100%;height:300px;margin-top:10%'></iframe></div></div>";
+}
+function iconeManager5() {
+    document.getElementById("texto").innerHTML = "";
 }
 

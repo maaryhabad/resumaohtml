@@ -41,6 +41,7 @@ a {
 a:hover {
 	font-weight: 700;
 	color: #664774;
+	text-shadow: 0.5px 0.5px #FFF;
 }
 ul {
 	list-style: none;
@@ -52,12 +53,12 @@ li {
 	text-align: right;
 }
 .conteudo {
-	width: 600px;
+	width: 800px;
 	height: auto;
-	margin-left: 100px;
 	background-color: rgba(255, 255, 255, 0.8);
 	display: flex;
 	padding: 50px 50px 50px 50px;
+	border-radius: 10px;
 }
 #titulo {
 	font-size: 26px;
@@ -119,7 +120,7 @@ p {
   position: relative;
   margin: auto;
   width: 400px;
-  height: 400px;
+  min-height: 400px;
   /*top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);*/
@@ -234,4 +235,13 @@ input:hover {
 .menuLogo {
 	display: flex;
 	flex-direction: column;
+}
+.tag {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header {
+	margin-right: 150px;
 }
