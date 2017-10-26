@@ -41,7 +41,18 @@ a {
 a:hover {
 	font-weight: 700;
 	color: #664774;
+	text-shadow: 0.5px 0.5px #000;
+}
+.linkInterno {
+	font-weight: 700;
+	color: #664774;
 	text-shadow: 0.5px 0.5px #FFF;
+}
+.linkInterno:hover {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	font-size: 20px;
 }
 ul {
 	list-style: none;
@@ -248,4 +259,57 @@ header {
 
 #comic {
 	font-family: 'Comic Sans MS';
+	animation: cores 2s infinite;
+}
+@keyframes cores
+{
+0% {color: blue;}
+25% {color: grey;}
+50% {color: black;}
+75% {color: purple;}
+100% {color: green;}
+}
+  
+@-moz-keyframes cores /* Firefox */
+{
+0% {color: blue;}
+25% {color: grey;}
+50% {color: black;}
+75% {color: purple;}
+100% {color: green;}
+}
+  
+@-webkit-keyframes cores /* Safari e Chrome */
+{
+0% {color: blue;}
+25% {color: grey;}
+50% {color: black;}
+75% {color: purple;}
+100% {color: green;}
+}
+  
+@-o-keyframes cores /* Opera */
+{
+0% {color: blue;}
+25% {color: grey;}
+50% {color: black;}
+75% {color: purple;}
+100% {color: green;}
+}
+pre {
+	background: #f5f2f0;
+	padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+	line-height: 25px;
+	font-size: 16px;
+}
+.classe {
+	color:#690;
+}
+.comando {
+	color: darkblue;
+}
+.invisivel {
+	display: none;
 }
