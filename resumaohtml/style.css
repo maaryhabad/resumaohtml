@@ -1,0 +1,260 @@
+body {
+	background: url(img/background.png);
+	padding: 3%;
+	display: flex;
+	font-family: 'Ubuntu', sans-serif;
+	justify-content: center;
+}
+.logo {
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	background-color: white;
+	border-radius: 150px;
+	margin-bottom: 20px;
+	font-family: 'Microsoft PhagsPa', sans-serif;	
+	align-self: center;
+}
+
+#re {
+	padding-top: 10px;
+	font-size: 60px;
+	color: #4c2c5a;
+	font-weight: bold;
+}
+#sumao {
+	font-size: 30px;
+	font-weight: bold;
+}
+.containerLogo {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-weight: 500;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+}
+a:hover {
+	font-weight: 700;
+	color: #664774;
+	text-shadow: 0.5px 0.5px #FFF;
+}
+.interno {
+	font-weight: 700;
+	color: #664774;
+	text-shadow: 0.5px 0.5px #FFF;
+}
+
+.interno:hover {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+	text-shadow: 0.5px 0.5px #664774;
+}
+ul {
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-padding-start: 0px !important;
+}
+li {
+	padding-top: 5px;
+	text-align: right;
+}
+.conteudo {
+	width: 800px;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	padding: 50px 50px 50px 50px;
+	border-radius: 10px;
+}
+#titulo {
+	font-size: 26px;
+	font-weight: 500;
+}
+strong {
+	font-weight: 700;
+	color: #664774;
+}
+.linktitle {
+	font-size: 26px;
+	font-weight: 700;
+	color: #664774;
+}
+
+p {
+	text-align: justify;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.icone {
+	width: 32px;
+	height: auto;
+}
+.botao {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+.imagem {
+	width: 100%;
+	margin-top: 3%;
+	border: 2px solid black;
+	border-radius: 20px;
+	}
+
+
+@media screen and (max-width: 699px) {
+	.menu {
+		display: none;
+	}
+	body {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.conteudo {
+		margin-left: 0px;
+		padding: 20px;
+		width: 85%;
+	}
+}
+
+.blocoLogin , .blocoCadastro{
+  background-color: white;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 400px;
+  min-height: 400px;
+  /*top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);*/
+}
+
+input{
+  width: 250px;
+  height: 40px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+#log{
+  width: 100px;
+  background-color: #7f479a;
+  border: none;
+  color: white;
+  height: 40px;
+  border-radius: 40px;
+}
+.logar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#fundoLogin{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+#fundoCadastro{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#fundoLogin.visivel {
+  display: flex;
+}
+
+#fundoCadastro.visivel {
+  display: flex;
+}
+
+#fecharLogin , #fecharCadastro{
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  }
+
+form {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 10%;
+}
+form > input{
+  width: 100%;
+  border: solid;
+  color: #7f469a;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+form > button.hover{
+  cursor: pointer;
+}
+.erro{
+  border: 1px solid red;
+  animation: shake 0.2s;
+}
+
+.conteudoModal{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10%;
+}
+
+.boas {
+	font-size: 18px;
+	text-align: right;
+	font-weight: bold;
+	color: white;
+	margin-right: 0;
+}
+.botoes {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	background-color: white;
+	width: 200px;
+}
+
+input:hover {
+	background-color:#c8a8d7;
+	border-color: black;
+}
+.menuLogo {
+	display: flex;
+	flex-direction: column;
+}
+.tag {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header {
+	margin-right: 150px;
+}
