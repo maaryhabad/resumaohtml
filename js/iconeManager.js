@@ -24,6 +24,6 @@ function iconeManager4() { /*TAG*/
 }
 function iconeManager5() {
     titulo.innerHTML = "Sobre <strong>Fontes</strong>";
-    texto.innerHTML = "";
+    texto.innerHTML = "<p>Para usar uma fonte já instalada no seu computador, como por exemplo a Comic Sans <span id='comic'>(que todo mundo ama ♥)</span></p>";
 }
 

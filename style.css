@@ -245,3 +245,7 @@ input:hover {
 header {
 	margin-right: 150px;
 }
+
+#comic {
+	font-family: 'Comic Sans MS';
+}
