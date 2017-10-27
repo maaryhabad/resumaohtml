@@ -122,6 +122,12 @@ p {
 		padding: 20px;
 		width: 85%;
 	}
+	.btn-inline {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
 
 .blocoLogin , .blocoCadastro{
@@ -138,7 +144,7 @@ p {
 }
 
 input{
-  width: 250px;
+  width: 200px;
   height: 40px;
   border-radius: 40px;
   margin-bottom: 20px;
@@ -299,8 +305,8 @@ header {
 pre {
 	background: #f5f2f0;
 	padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
+  	margin: .5em 0;
+  	overflow: auto;
 	line-height: 25px;
 	font-size: 16px;
 }
@@ -312,4 +318,12 @@ pre {
 }
 .invisivel {
 	display: none;
+}
+
+#login, #cadastro {
+	max-width: 150px;
+	align-self: center;	
+	font-family: 'Microsoft PhagsPa', sans-serif;
+	border: none;
+	font-weight: bold;
 }
