@@ -305,13 +305,14 @@ header {
 pre {
 	background: #f5f2f0;
 	padding: 1em;
-  	margin: .5em 0;
-  	overflow: auto;
+  margin: .5em 0;
+  overflow: auto;
 	line-height: 25px;
 	font-size: 16px;
 }
 .classe {
 	color:#690;
+	font-weight: bold;
 }
 .comando {
 	color: darkblue;
@@ -326,4 +327,9 @@ pre {
 	font-family: 'Microsoft PhagsPa', sans-serif;
 	border: none;
 	font-weight: bold;
+}
+.listas {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid black;
 }

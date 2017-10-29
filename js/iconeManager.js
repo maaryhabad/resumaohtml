@@ -33,3 +33,8 @@ function iconeManager6() {
     img.src="img/fontes.png";
     texto.innerHTML = "<p>Você pode também utilizar uma fonte disponível online. Aqui no <strong>{reprograma}</strong> nós usamos muito o <a class='linkInterno' href='https://fonts.google.com/'>GoogleFonts</a>. Lá, você pode escolher uma fonte e ele gera pra você o código em HTML e já te diz como chamar ele no seu arquivo CSS. Fica tudo bem mais simples!</p>";
 }
+
+function iconeManager7 () {
+  img.classList.add("invisivel");
+  texto.innerHTML = "<div class='listas'><ul><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ul></div><div class='listas'><ol><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ol></div><div class='listas'><ol reversed><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ol></div>";
+}
