@@ -186,7 +186,9 @@ input{
 #fundoLogin.visivel {
   display: flex;
 }
-
+.visivel {
+	display: block;
+}
 #fundoCadastro.visivel {
   display: flex;
 }
@@ -318,7 +320,7 @@ pre {
 	color: darkblue;
 }
 .invisivel {
-	display: none;
+	display: none !important;
 }
 
 #login, #cadastro {
