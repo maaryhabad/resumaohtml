@@ -13,8 +13,31 @@ var boas = document.querySelector(".boas");
 // dá pra fazer um botão de desligar que apague as informações!!!!!
 var formulario = document.querySelector('form');
 
+var botaoCadastro = document.querySelector("#cadastro");
+
+var nome = localStorage.nome;
+
+
+if (localStorage.nome == "") {
+    boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
+    botaoCadastro.classList.remove("invisivel");
+} else {
+    boas.innerHTML = "Seja bem vinda, <strong>" +nome+ "<strong>";
+    botaoLogin.value = "Deslogar";
+}
+
+
 login.onclick = function() {
-    fundoLogin.classList.add("visivel");
+    if (botaoLogin.value == "Deslogar") {
+        localStorage.clear();
+        boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
+        botaoLogin.value = "Login";
+    } else {
+        fundoLogin.classList.add("visivel");
+        botaoCadastro.classList.add("visivel");
+        botaoCadastro.classList.remove("invisivel");
+        botaoLogin.value = "Deslogar";
+    }
 }
 
 fundoLogin.onclick = function(e) {
@@ -77,7 +100,6 @@ formLogin.onsubmit = function(e) {
     var senhaLogin = document.querySelector("#senhaLogin");
 
     var modalLogin = document.querySelector(".blocoLogin");
-    var correto;  
 
         if (botaoLogin.value == "Login") {
             if (localStorage.email == emailLogin.value && localStorage.senha == senhaLogin.value) {
@@ -90,11 +112,8 @@ formLogin.onsubmit = function(e) {
                         alert("Seus dados estão incorretos, tente novamente");
                         return false;
                     }
-        } else if (botaoLogin.value == "Deslogar") {
-            localStorage.clear();
-            boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
-            botaoLogin.value = "Login";
         } 
+        
     
     
 }

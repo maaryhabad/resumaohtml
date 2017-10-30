@@ -36,5 +36,6 @@ function iconeManager6() {
 
 function iconeManager7 () {
   img.classList.add("invisivel");
-  texto.innerHTML = "<div class='listas'><ul><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ul></div><div class='listas'><ol><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ol></div><div class='listas'><ol reversed><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ol></div>";
+  texto.innerHTML = "<div class='container'><div class='listas'><ul><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ul></div><div class='listas'><ol><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ol></div><div class='listas'><ol reversed><li>Essa é</li><li>a Lista</li><li>Não</li><li>Ordenada</li></ol></div></div>";
+  
 }
