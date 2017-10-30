@@ -8,6 +8,11 @@ if (nome == null) {
 } else {
     boas.innerHTML = "Seja bem vinda, <strong>" +nome+ "<strong>";
     botaoLogin.value = "Deslogar";
+    botaoCadastro.classList.add("invisivel");
 }
 
+if (botaoLogin.value !== "Deslogar") {
+    botaoCadastro.classList.add("visivel");
+    botaoCadastro.classList.remove("invisivel");
+}
 

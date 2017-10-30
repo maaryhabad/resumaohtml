@@ -14,13 +14,7 @@ var boas = document.querySelector(".boas");
 var formulario = document.querySelector('form');
 
 login.onclick = function() {
-    if (botaoLogin.value == "Deslogar") {
-        localStorage.clear();
-        boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
-    
-    } else {
-        fundoLogin.classList.add("visivel");
-    }
+    fundoLogin.classList.add("visivel");
 }
 
 fundoLogin.onclick = function(e) {
@@ -83,16 +77,24 @@ formLogin.onsubmit = function(e) {
     var senhaLogin = document.querySelector("#senhaLogin");
 
     var modalLogin = document.querySelector(".blocoLogin");
-    var correto;
-        if (localStorage.email == emailLogin.value && localStorage.senha == senhaLogin.value) {
-    //troca de página
-            fundoLogin.classList.remove("visivel");
-            boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "</strong>";
-            e.preventDefault();
-        } else {
-            alert("Seus dados estão incorretos, tente novamente");
-            return false;
-        }
+    var correto;  
+
+        if (botaoLogin.value == "Login") {
+            if (localStorage.email == emailLogin.value && localStorage.senha == senhaLogin.value) {
+                //troca de página
+                        fundoLogin.classList.remove("visivel");
+                        boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "</strong>";
+                        botaoLogin.value = "Deslogar";
+                        e.preventDefault();
+                    } else {
+                        alert("Seus dados estão incorretos, tente novamente");
+                        return false;
+                    }
+        } else if (botaoLogin.value == "Deslogar") {
+            localStorage.clear();
+            boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
+            botaoLogin.value = "Login";
+        } 
     
     
 }
