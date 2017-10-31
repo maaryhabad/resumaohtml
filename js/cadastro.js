@@ -19,38 +19,31 @@ var nome = localStorage.nome;
 
 
 if (localStorage.nome == undefined) {
-    boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
+    boas.innerHTML = "Seja bem vinda, faça seu <strong>cadastro</strong> para começar";
     botaoCadastro.classList.remove("invisivel");
-    botaoLogin.value = "Logar";
+    botaoLogin.classList.add("invisivel");
 } else {
     boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "<strong>";
     botaoLogin.value = "Deslogar";
+    botaoLogin.classList.remove("invisivel");
 }
 
 
 login.onclick = function() {
     if (botaoLogin.value == "Deslogar") {
         localStorage.clear();
-        boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
+        boas.innerHTML = "Seja bem vinda, faça seu <strong>cadastro</strong> para começar";
         botaoLogin.value = "Login";
     } else {
         fundoLogin.classList.add("visivel");
-        botaoLogin.value = "Deslogar";
-        botaoCadastro.classList.add("visivel");
-        botaoCadastro.classList.remove("invisivel");
+        if (localStorage.nome == "") {
+            botaoLogin.value = "Deslogar";
+            botaoCadastro.classList.add("visivel");
+            botaoCadastro.classList.remove("invisivel");
+        }       
     }
 }
 
-fundoLogin.onclick = function(e) {
-    console.log(e);
-    if (e.target == fundoLogin) {
-        fundoLogin.classList.remove("visivel");
-    }    
-}
-
-fecharLogin.onclick = function() {
-    fundoLogin.classList.remove("visivel");  
-}
 
 cadastro.onclick = function() {
     fundoCadastro.classList.add("visivel");
@@ -93,30 +86,8 @@ formCadastro.onsubmit = function (e) {
         botaoCadastro.classList.add("invisivel");
         e.preventDefault();
         boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "<strong>";
+        botaoLogin.classList.add("visivel");
+        botaoLogin.classList.remove("invisivel");
         botaoLogin.value = "Deslogar";
     }
-}
-
-var formLogin = fundoLogin.querySelector('form');
-
-formLogin.onsubmit = function(e) {
-    var emailLogin = document.querySelector("#emailLogin");
-    var senhaLogin = document.querySelector("#senhaLogin");
-
-    var modalLogin = document.querySelector(".blocoLogin");
-
-        if (botaoLogin.value == "Login") {
-            if (localStorage.email == emailLogin.value && localStorage.senha == senhaLogin.value) {
-                        fundoLogin.classList.remove("visivel");
-                        boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "</strong>";
-                        botaoLogin.value = "Deslogar";
-                        e.preventDefault();
-                    } else {
-                        alert("Seus dados estão incorretos, tente novamente");
-                        return false;
-                    }
-        } 
-        
-    
-    
 }

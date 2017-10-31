@@ -110,10 +110,12 @@ p {
 	margin-top: 20px;
 }
 .imagem {
+	display: flex;
 	width: 100%;
 	margin-top: 3%;
 	border: 2px solid black;
 	border-radius: 20px;
+	padding: 4px;
 	}
 
 
@@ -356,4 +358,19 @@ pre {
   margin-bottom: 40px;
 
 }
+
+.contact-img {
+	width: 150px;
+	height: 150px;
+}
+.bloco {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	width: 800px;
+}
+.bloco img {
+	margin: 20px;
+}
+
 
