@@ -1,6 +1,6 @@
 var fundoLogin = document.getElementById("fundoLogin");
 var fecharLogin = document.getElementById("fecharLogin");
-var botaoLogin = document.getElementById("#login");
+var botaoLogin = document.getElementById("login");
 
 var fundoCadastro = document.getElementById("fundoCadastro");
 var fecharCadastro = document.getElementById("fecharCadastro");
@@ -18,11 +18,12 @@ var botaoCadastro = document.querySelector("#cadastro");
 var nome = localStorage.nome;
 
 
-if (localStorage.nome == "") {
+if (localStorage.nome == undefined) {
     boas.innerHTML = "Seja bem vinda, faça <strong>login</strong> para começar";
     botaoCadastro.classList.remove("invisivel");
+    botaoLogin.value = "Logar";
 } else {
-    boas.innerHTML = "Seja bem vinda, <strong>" +nome+ "<strong>";
+    boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "<strong>";
     botaoLogin.value = "Deslogar";
 }
 
@@ -34,9 +35,9 @@ login.onclick = function() {
         botaoLogin.value = "Login";
     } else {
         fundoLogin.classList.add("visivel");
+        botaoLogin.value = "Deslogar";
         botaoCadastro.classList.add("visivel");
         botaoCadastro.classList.remove("invisivel");
-        botaoLogin.value = "Deslogar";
     }
 }
 
@@ -88,13 +89,16 @@ formCadastro.onsubmit = function (e) {
         alert("As duas senhas não correspondem, tente novamente");
     } else {
         fundoCadastro.classList.remove("visivel");
-        boas.innerHTML = "Seja bem vinda, <strong>" +nome.value+ "</strong>";
+        botaoCadastro.classList.remove("visivel");
         botaoCadastro.classList.add("invisivel");
         e.preventDefault();
+        boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "<strong>";
+        botaoLogin.value = "Deslogar";
     }
 }
 
 var formLogin = fundoLogin.querySelector('form');
+
 formLogin.onsubmit = function(e) {
     var emailLogin = document.querySelector("#emailLogin");
     var senhaLogin = document.querySelector("#senhaLogin");
@@ -103,7 +107,6 @@ formLogin.onsubmit = function(e) {
 
         if (botaoLogin.value == "Login") {
             if (localStorage.email == emailLogin.value && localStorage.senha == senhaLogin.value) {
-                //troca de página
                         fundoLogin.classList.remove("visivel");
                         boas.innerHTML = "Seja bem vinda, <strong>" +localStorage.nome+ "</strong>";
                         botaoLogin.value = "Deslogar";
